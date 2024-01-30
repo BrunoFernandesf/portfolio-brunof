@@ -63,6 +63,9 @@
         font-size: 1.85rem;
         width: 100%;
     }
+    .cabecalho__nav-menu-acesso-lista-itens {
+        font-weight: 500;
+    }
 
     /*Div pai do menu*/
     .cabecalho__nav-menu {
@@ -89,20 +92,24 @@
     /*Cabeçalho Portfolio título*/
     .cabecalho__nav-portfolio-titulo {
         font-size: 3rem;
+        font-weight: 500;
     }
 
     /*PRINCIPAL PORTFOLIO*/
     /*Texto 01*/
     #principal__portfolio-apresentacao-texto-01 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        font-weight: 500;
     }
     /*Texto 02*/
     #principal__portfolio-apresentacao-texto-02 {
         font-size: 1.75rem;
+        font-weight: 300;
     }
     /*Download CV*/
     #principal__portfolio-apresentacao-cv-texto-01 {
         font-size: 1.35rem;
+        font-weight: 600;
     }
 
     /*CONTEÚDO SOBRE*/
@@ -200,7 +207,7 @@
     /*Principal Portfolio*/
     .principal__portfolio {
         justify-content: space-evenly;
-        gap: 2%;
+        gap: 0%;
         padding: 0;
     }
 
