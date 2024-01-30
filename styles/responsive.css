@@ -1,0 +1,245 @@
+@media screen and (min-width: 768px) {
+    /*ELEMENTOS INVÍSIVEIS NO RESPONSIVO*/    
+    .cabecalho__nav-menu-icone {
+        display: none;
+    }
+
+    /*ELEMENTOS COM ORDEM ALTERADA*/
+    .cabecalho__nav-menu {
+        order: 1;
+    }
+
+    .cabecalho__nav-portfolio {
+        order: 0;
+    }
+
+    .cabecalho__nav-idioma {
+        order: 2;
+    }
+
+    /*EFEITOS GERAIS*/
+    body {
+        margin-top: 15%; 
+    }
+    .cabecalho {
+        width: 100vw;
+        height: 8vh;
+    }
+    /*Título das seções*/
+    .portfolio__titulo {
+        font-size: 2rem;
+    }
+
+    /*ELEMENTO HEADER*/
+    /*Div pai dos elementos header*/
+    .cabecalho__nav {
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    /*Menu de acesso - Sempre ativo no responsivo*/
+    .cabecalho__nav-menu-acesso {
+        top: 0%;
+        right: 0%;
+        display: block;
+        flex-direction: row;
+        position: static;
+        width: 100%;
+        color: var(--azul-claro);
+        background-color: transparent;
+        border: none;
+    }
+
+    .cabecalho__nav-menu-acesso.ativo {
+        display: flex;
+    }
+
+    /*Lista container dos elementos do menu*/
+    .cabecalho__nav-menu-acesso-lista {
+        display: flex;
+        justify-content: space-around;
+        gap: 3%;
+        font-size: 1.85rem;
+        width: 100%;
+    }
+
+    /*Div pai do menu*/
+    .cabecalho__nav-menu {
+        margin: 0;
+        width: 50%;
+    }
+
+    /*Botão idioma*/
+    .cabecalho__nav-idioma {
+        margin: 0;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 5%;
+    }
+    /*Imagem idioma*/
+    .cabecalho__nav-idioma-img {
+        width: 25%;
+    }
+    /*Texto idioma*/
+    #cabecalho__nav-idioma-texto {
+        font-size: 1.5rem;
+    }
+
+    /*Cabeçalho Portfolio título*/
+    .cabecalho__nav-portfolio-titulo {
+        font-size: 3rem;
+    }
+
+    /*PRINCIPAL PORTFOLIO*/
+    /*Texto 01*/
+    #principal__portfolio-apresentacao-texto-01 {
+        font-size: 2rem;
+    }
+    /*Texto 02*/
+    #principal__portfolio-apresentacao-texto-02 {
+        font-size: 1.75rem;
+    }
+    /*Download CV*/
+    #principal__portfolio-apresentacao-cv-texto-01 {
+        font-size: 1.35rem;
+    }
+
+    /*CONTEÚDO SOBRE*/
+    /*Section sobre*/
+    .principal__sobre {
+        padding: 8% 0 15% 0;
+    }
+
+    .principal__sobre-conteudo {
+        text-align: center;
+        background-image: url("../img/background__sobre.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    /*Texto seção*/
+    #principal__sobre-conteudo-texto {
+        font-size: 2rem;
+    }
+
+    /*PROJETOS*/
+    /*Elemento para separar os projetos em linha*/
+    .principal__projetos__container {
+        display: flex;
+        justify-content: space-around;
+    }
+    /*Container pai dos projetos*/
+    .principal__projetos__container {
+        width: 100%;
+    }
+    /*Elemento linha*/
+    .principal___projetos__container-linha {
+        width: 40%;
+    }
+    /*Container dos elementos*/
+    .principal__projetos__container-itens {
+        width: 100%;
+    }
+
+    /*CONTATOS*/
+    /*Container contatos*/
+    .rodape__contatos {
+        background-image: url("../img/background_desktop.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+    
+    .rodape__contatos__container {
+        padding: 5% 5% 5% 10%;
+    }
+    /*Texto links contatos*/
+    .rodape__contatos__links {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /*Desktop*/
+
+    
+    /*Espaçamento menu - tela*/
+    body {
+        margin-top: 12%; 
+    }
+
+    /*Tamanho cabeçalho*/
+    .cabecalho {
+        width: 100vw;
+        height: 10vh;
+        padding-bottom: 1%;
+    }
+
+    .cabecalho__nav {
+        padding-top: 1.5%;
+        align-items: center;
+    }
+
+    /*Necessário utilizar 100% da largura caso contrário ter alteração ao usar o toggle no js*/
+    .cabecalho__nav-menu-acesso-lista {
+        width: 100%;
+    }
+
+    .cabecalho__nav-idioma {
+        margin: 0;
+        height: auto;
+        align-items: flex-end;
+    }
+
+    .cabecalho__nav-portfolio-titulo {
+        font-size: 3.5rem;
+    }
+
+    /*Principal Portfolio*/
+    .principal__portfolio {
+        justify-content: space-evenly;
+        gap: 2%;
+        padding: 0;
+    }
+
+    /*Principal Habilidades*/
+    .principal__habilidades__container {
+        width: 40%;
+        margin: 1% 0 0  0;
+    }
+
+
+    .principal__sobre-conteudo {
+        text-align: center;
+        background-image: url("../img/background__sobre.png");
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-position: center;
+    }
+
+    /*RODAPÉ*/
+    .rodape__contatos {
+        background-image: url("../img/background_desktop.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        width: 95%;
+    }
+    .rodape__contatos__links {
+        font-size: 2rem;
+    }
+    .rodape__contatos__container {
+        background-size: cover;
+        width: 60%;
+        height: 50%;
+        padding: 4% 5% 2% 15%;
+    }
+    .rodape__contatos__container-itens {
+        padding-top: 1%;
+    }
+    .rodape__contatos__container-itens-img {
+        width: 7%;
+    }
+}

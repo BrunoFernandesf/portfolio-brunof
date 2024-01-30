@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap');
+
+:root {
+    --roxo: #08031D;
+    --azul-escuro: #004F71;
+    --azul-medio: #0D8485;
+    --azul-claro: #00C6CA;
+    --azul-claro2: #0CC7C9;
+    --azul-maisescuro: #270AD6;
+    --branco: #FFFFFF;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--roxo);
+    color: var(--branco);
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    margin-top: 20%; 
+}
+
+/*CABEÇALHO*/
+/*Tamanho elemento pai*/
+.cabecalho {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--roxo);
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid var(--azul-medio);
+    
+}
+
+/*Flexbox para organizar os 3 elementos*/
+.cabecalho__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    padding-top: 5%;
+}
+
+/*Muda o cursor no portfolio*/
+.cabecalho__nav-portfolio {
+    cursor: pointer;
+}
+
+.cabecalho__nav-menu {
+    width: 15%;
+    height: 100%;
+    margin: 0 0 0 5%;
+}
+
+.cabecalho__nav-menu-icone {
+    width: 100%;
+    height: 100%;
+}
+
+/*Criação do elemento menu (Ícone)*/
+.cabecalho__nav-menu-icone-hamburg {
+    width: 100%;
+    height: 75%;
+    padding: 3%;
+    background-color: var(--azul-escuro);
+    border: 1px solid var(--azul-claro);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho__nav-menu-icone-hamburg.invisivel {
+    display: none;
+}
+
+/*Linhas ícone menu*/
+.cabecalho__nav-menu-linha {
+    width: 30%;
+    height: 10%;
+    background-color: var(--azul-claro);
+}
+
+/* Div icone X */
+.cabecalho__nav-menu-icone-x {
+    width: 100%;
+    height: 75%;
+    padding: 3%;
+    background-color: var(--azul-escuro);
+    border: 1px solid var(--azul-claro);
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    display: none;
+}
+
+/*Classes para ativação e desativação dos menus*/
+.cabecalho__nav-menu-icone-hamburg.invisivel {
+    display: none;
+}
+
+.cabecalho__nav-menu-icone-hamburg.visivel {
+    display: block;
+}
+
+.cabecalho__nav-menu-icone-x.invisivel {
+    display: none;
+}
+
+.cabecalho__nav-menu-icone-x.visivel {
+    display: flex;
+}
+
+/*Menu de Navegação mobile*/
+.cabecalho__nav-menu-acesso.ativo {
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Esconde o elemento no modo mobile enquanto o menu estiver colapsado*/
+.cabecalho__nav-menu-acesso {
+    position: fixed;
+    top: 8%;
+    right: 6%;
+    width: 88%;
+    background-color: var(--azul-escuro);
+    z-index: -1;
+    text-align: center;
+    display: none;
+    border: 1px solid var(--azul-claro);
+    line-height: 2em;
+    font-size: 1.4rem;
+    color: var(--azul-claro);
+    text-shadow: 2px 2px 3px var(--roxo);
+    cursor: pointer;
+}
+
+/*tag a do menu*/
+.cabecalho__nav-menu-acesso-lista-itens a{
+    text-decoration: none;
+    color: var(--azul-claro);
+}
+
+/* Linhas ícone X */
+#cabecalho__nav-menu-icone-x01,
+#cabecalho__nav-menu-icone-x02 {
+    width: 30%;
+    height: 10%;
+    background-color: var(--azul-claro);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+
+/* Linha 01 do X */
+#cabecalho__nav-menu-icone-x01 {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Linha 02 do X */
+#cabecalho__nav-menu-icone-x02 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+/*Título portfolio*/
+.cabecalho__nav-portfolio-titulo {
+    font-size: 1.5rem;
+    color: var(--azul-medio);
+    text-shadow: 1px 1px 2px var(--azul-maisescuro);
+}
+
+
+/*Flexbox para organizar o icone e texto do idioma*/
+.cabecalho__nav-idioma {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--azul-medio);
+    margin: 0 5% 0 0;
+    cursor: pointer;
+}
+
+/*Cor do ícone idioma*/ 
+.cabecalho__nav-idioma-img path {
+    fill: var(--azul-medio);
+}
+
+/*Texto do idioma*/
+#cabecalho__nav-idioma-texto {
+    font-size: 0.75rem;
+}
+
+/*PRINCIPAL PORTFOLIO*/
+.principal__portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding-top: 5%;
+}
+
+/*Container img perfil*/
+.principal__portfolio-imgperfil {
+    width: 25%;
+    height: 25%;
+}
+
+/*Imagem perfil*/
+#principal__portfolio-imgperfil-img {
+    width: 100%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+/*Apresentação portfólio*/
+.principal__portfolio-apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*Container portfolio apresentação*/
+.principal__portfolio-apresentacao-texto {
+    padding-top: 5%;
+}
+
+
+/*Primeiro parágrafo apresentação*/
+#principal__portfolio-apresentacao-texto-01 {
+    color: var(--azul-claro2);
+    line-height: 1.5em;
+}
+
+/*Segundo parágrafo apresentação*/
+#principal__portfolio-apresentacao-texto-02 {
+    color: var(--azul-maisescuro);
+    font-size: 0.9rem;
+}
+
+/*Texto download currículo*/
+#principal__portfolio-apresentacao-cv-texto-01 {
+    color: var(--azul-claro);
+    text-decoration: none;
+    font-size: 0.75rem;
+    padding: 2% 5% 2% 5%;
+    border: 1px solid var(--azul-medio);
+}
+
+/*PRINCIPAL SOBRE*/
+/*Título das seções*/
+.portfolio__titulo {
+    font-size: 1.38rem;
+    color: var(--azul-claro);
+    text-align: center;
+    padding-bottom: 2%;
+    text-shadow: 1px 1px 2px var(--azul-maisescuro);
+}
+
+.principal__sobre {
+    padding: 15% 0 15% 0;
+}
+
+/*Container sobre*/
+.principal__sobre-conteudo {
+    text-align: center;
+    background-image: url("../img/fundo_sobre.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#principal__sobre-conteudo-texto {
+    padding: 0 10% 0 10%;
+    line-height: 1.25em;
+}
+
+/*PRINCIPAL HABILIDADES*/
+.principal__habilidades {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Container habilidades*/
+.principal__habilidades__container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 3% 0 0 0;
+}
+
+/*Linha dos elementos*/
+.principal__habilidades__container-skill {
+    display: flex;
+    justify-content: space-between;
+    gap:  5%;
+    padding: 5%;
+}
+/*Div agrupando ícone*/
+.principal__habilidades__container-skill-tec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 207, 209, 0.50);
+    border-radius: 5%;
+    width: 100%;
+}
+
+/*Imagens tópico habilidade*/
+.principal__habilidades__container-skill-topico {
+    width: 50%;
+    height: 15%;
+} 
+
+/*Imagens habilidades*/
+.principal__habilidades__container-skill-img {
+    width: 100%;
+    height: 50%;
+}
+/*Nome tecnologias*/
+.principal__habilidades__container-skill-texto {
+    color: var(--azul-claro2);
+    font-family: 'Doppio One', sans-serif;
+    font-size: 0.85rem;
+    background-color: #08031D;
+    border: 1px solid var(--branco);
+    border-radius: 5%;
+    padding: 5%;
+}
+
+
+/*PRINCIPAL PROJETOS*/
+/* Projeto área */
+.principal__projetos__titulo {
+    padding-top: 5%;
+}
+
+.principal__projetos__container-itens {
+    margin: 5%;
+    cursor: pointer; /* Adiciona cursor apontando para indicar que é clicável */
+}
+
+/* Título do projeto */
+.principal__projetos__container-itens-titulo {
+    background-color: var(--azul-medio);
+    padding: 2%;
+}
+
+/* Botão veja mais */
+.principal__projetos__container-itens-mais {
+    background-color: var(--azul-medio);
+    padding: 1%;
+}
+
+/* Projeto 01 */
+/* Frente do primeiro projeto */
+#principal__projetos__projeto01 {
+    background-image: url("../img/pamonha-iris.jpeg");
+    background-size: cover;   
+    opacity: 0.9;
+ 
+}
+/* Projeto 02 */
+/* Frente do segundo projeto */
+#principal__projetos__projeto02 {
+    background-image: url("../img/aska-lamen.png");
+    background-size: cover;   
+    opacity: 0.9;
+ 
+}
+/* Projeto 03 */
+/* Frente do terceiro projeto */
+#principal__projetos__projeto03 {
+    background-image: url("../img/estadao.png");
+    background-size: cover;   
+    opacity: 0.9;
+ 
+}/* Projeto 04 */
+/* Frente do quarto projeto */
+#principal__projetos__projeto04 {
+    background-image: url("../img/fokus.png");
+    background-size: cover;   
+    opacity: 0.9;
+ 
+}
+
+
+/* Frente do card */
+.principal__projetos__container-itens-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12%;
+}
+
+/*Verso do card*/
+/*Título do card e tecnologias*/
+.principal__projetos__container-itens-titulo-back {
+    display: flex;
+}
+
+/* Verso do card que fica invisível até ser clicado */
+.principal__projetos__container-itens-back {
+    display: none;
+    background-color: var(--azul-escuro);
+    border: 1px solid var(--azul-claro);
+    padding: 5%;
+    line-height: 2em;
+}
+
+/* Mostra o verso quando a classe virado está presente */
+.principal__projetos__container-itens.virado .principal__projetos__container-itens-back {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Esconde a parte frontal quando a classe virado está presente */
+.principal__projetos__container-itens.virado .principal__projetos__container-itens-front {
+    display: none;
+}
+
+/*Div container de organização dos botões*/
+.principal__projetos__container-itens-back-botoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Container link*/
+.principal___projetos__container-itens-back-botoes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    padding: 2% 2% 2% 2%;
+    background-color: var(--azul-medio);
+}
+
+/*Imagem dos links*/
+.principal__projetos__container-itensimg {
+    width: 40%;
+}
+
+/*Links cards*/
+.principal__projetos__container-links {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+/*RODAPÉ*/
+/*Espaçamento rodapé*/
+.rodape__contatos {
+    padding-top: 5%;
+    background-image: url("../img/fundo_rodape.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Div agrupando os contatos*/
+.rodape__contatos__container {
+    font-size: 0.88rem;
+    padding: 5% 5% 5% 8%;
+    line-height: 2.5rem;
+
+}
+
+/*Container contatos*/
+.rodape__contatos__container-itens {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+/*Links contatos*/
+.rodape__contatos__links {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.rodape__contatos__links:visited {
+    color: var(--branco);
+    text-decoration: none;
+}
