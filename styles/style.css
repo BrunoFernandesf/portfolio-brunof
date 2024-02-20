@@ -442,9 +442,6 @@ body {
 
 /*Container link*/
 .principal___projetos__container-itens-back-botoes-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 40%;
     padding: 2% 2% 2% 2%;
     background-color: var(--azul-medio);
@@ -457,8 +454,16 @@ body {
 
 /*Links cards*/
 .principal__projetos__container-links {
+    display: flex;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: var(--branco);
+}
+
+.principal__projetos__container-links:hover {
+    color: var(--azul-maisescuro);
 }
 
 /*RODAPÉ*/
