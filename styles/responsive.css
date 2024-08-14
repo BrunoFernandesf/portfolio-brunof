@@ -205,8 +205,8 @@
 
     /*Principal Portfolio*/
     .principal__portfolio {
-        justify-content: space-evenly;
-        gap: 0%;
+        justify-content: center;
+        gap: 10%;
         padding: 0;
     }
 
