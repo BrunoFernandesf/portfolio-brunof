@@ -46,7 +46,6 @@
         flex-direction: row;
         position: static;
         width: 100%;
-        color: var(--azul-claro);
         background-color: transparent;
         border: none;
     }

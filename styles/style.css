@@ -2,13 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap');
 
 :root {
-    --roxo: #08031D;
-    --azul-escuro: #004F71;
-    --azul-medio: #0D8485;
-    --azul-claro: #00C6CA;
-    --azul-claro2: #0CC7C9;
-    --azul-maisescuro: #270AD6;
-    --branco: #FFFFFF;
+    --padrao: #13131F;
+    --cor1: #8257E6;
+    --cor2: #004F71;
+    --cor3: #FFFFFF;
+    --cor4: #bdbdbd;
+    --secundaria: #FFFFFF;
 }
 
 html, body {
@@ -16,8 +15,8 @@ html, body {
 }
 
 body {
-    background-color: var(--roxo);
-    color: var(--branco);
+    background-color: var(--padrao);
+    color: var(--secundaria);
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
     margin-top: 20%; 
@@ -31,10 +30,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--roxo);
+    background-color: var(--padrao);
     width: 100%;
     z-index: 1000;
-    border-bottom: 1px solid var(--azul-medio);
+    border-bottom: 1px solid var(--cor1);
     
 }
 
@@ -70,7 +69,7 @@ body {
     height: 75%;
     padding: 3%;
     background-color: var(--azul-escuro);
-    border: 1px solid var(--azul-claro);
+    border: 1px solid var(--cor3);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -86,7 +85,7 @@ body {
 .cabecalho__nav-menu-linha {
     width: 30%;
     height: 10%;
-    background-color: var(--azul-claro);
+    background-color: var(--cor3);
 }
 
 /* Div icone X */
@@ -95,7 +94,7 @@ body {
     height: 75%;
     padding: 3%;
     background-color: var(--azul-escuro);
-    border: 1px solid var(--azul-claro);
+    border: 1px solid var(--cor3);
     border-radius: 5px;
     display: flex;
     position: relative;
@@ -136,10 +135,10 @@ body {
     z-index: -1;
     text-align: center;
     display: none;
-    border: 1px solid var(--azul-claro);
+    border: 1px solid var(--cor3);
     line-height: 2em;
     font-size: 1.4rem;
-    color: var(--azul-claro);
+    color: var(--cor3);
     text-shadow: 2px 2px 3px var(--roxo);
     cursor: pointer;
 }
@@ -147,7 +146,7 @@ body {
 /*tag a do menu*/
 .cabecalho__nav-menu-acesso-lista-itens a{
     text-decoration: none;
-    color: var(--azul-claro);
+    color: var(--cor3);
 }
 
 /* Linhas ícone X */
@@ -155,7 +154,7 @@ body {
 #cabecalho__nav-menu-icone-x02 {
     width: 30%;
     height: 10%;
-    background-color: var(--azul-claro);
+    background-color: var(--cor3);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -176,7 +175,7 @@ body {
 /*Título portfolio*/
 .cabecalho__nav-portfolio-titulo {
     font-size: 1.5rem;
-    color: var(--azul-medio);
+    color: var(--cor1);
 
 }
 
@@ -188,14 +187,14 @@ body {
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    color: var(--azul-medio);
+    color: var(--cor1);
     margin: 0 5% 0 0;
     cursor: pointer;
 }
 
 /*Cor do ícone idioma*/ 
 .cabecalho__nav-idioma-img path {
-    fill: var(--azul-medio);
+    fill: var(--cor1);
 }
 
 /*Texto do idioma*/
@@ -239,33 +238,33 @@ body {
 
 /*Primeiro parágrafo apresentação*/
 #principal__portfolio-apresentacao-texto-01 {
-    color: var(--azul-claro2);
+    color: var(--cor1);
     line-height: 1.5em;
 }
 
 /*Segundo parágrafo apresentação*/
 #principal__portfolio-apresentacao-texto-02 {
-    color: var(--azul-maisescuro);
+    color: var(--cor4);
     font-size: 0.9rem;
 }
 
 /*Texto download currículo*/
 #principal__portfolio-apresentacao-cv-texto-01 {
-    color: var(--azul-claro);
+    color: var(--cor3);
     text-decoration: none;
     font-size: 0.75rem;
     padding: 2% 5% 2% 5%;
-    border: 1px solid var(--azul-medio);
+    border: 1px solid var(--cor1);
 }
 
 /*PRINCIPAL SOBRE*/
 /*Título das seções*/
 .portfolio__titulo {
     font-size: 1.38rem;
-    color: var(--azul-claro);
+    color: var(--cor3);
     text-align: center;
     padding-bottom: 2%;
-    text-shadow: 1px 1px 2px var(--azul-maisescuro);
+    text-shadow: 1px 1px 2px var(--cor4);
 }
 
 .principal__sobre {
@@ -334,11 +333,11 @@ body {
 }
 /*Nome tecnologias*/
 .principal__habilidades__container-skill-texto {
-    color: var(--azul-claro2);
+    color: var(--cor3);
     font-family: 'Doppio One', sans-serif;
     font-size: 0.85rem;
     background-color: #08031D;
-    border: 1px solid var(--branco);
+    border: 1px solid var(--secundaria);
     border-radius: 5%;
     padding: 5%;
 }
@@ -357,13 +356,13 @@ body {
 
 /* Título do projeto */
 .principal__projetos__container-itens-titulo {
-    background-color: var(--azul-medio);
+    background-color: var(--cor1);
     padding: 2%;
 }
 
 /* Botão veja mais */
 .principal__projetos__container-itens-mais {
-    background-color: var(--azul-medio);
+    background-color: var(--cor1);
     padding: 1%;
 }
 
@@ -419,7 +418,7 @@ body {
 .principal__projetos__container-itens-back {
     display: none;
     background-color: var(--azul-escuro);
-    border: 1px solid var(--azul-claro);
+    border: 1px solid var(--cor3);
     padding: 5%;
     line-height: 2em;
 }
@@ -445,7 +444,7 @@ body {
 .principal___projetos__container-itens-back-botoes-container {
     width: 40%;
     padding: 2% 2% 2% 2%;
-    background-color: var(--azul-medio);
+    background-color: var(--cor1);
 }
 
 /*Imagem dos links*/
@@ -460,11 +459,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--branco);
+    color: var(--secundaria);
 }
 
 .principal__projetos__container-links:hover {
-    color: var(--azul-maisescuro);
+    color: var(--cor4);
 }
 
 /*RODAPÉ*/
@@ -494,10 +493,10 @@ body {
 /*Links contatos*/
 .rodape__contatos__links {
     text-decoration: none;
-    color: var(--branco);
+    color: var(--secundaria);
 }
 
 .rodape__contatos__links:visited {
-    color: var(--branco);
+    color: var(--secundaria);
     text-decoration: none;
 }
