@@ -361,6 +361,11 @@ body {
     margin: 5%;
     cursor: pointer; /* Adiciona cursor apontando para indicar que é clicável */
 }
+.principal__projetos__container-itens-skills{
+    width: 85%;
+    text-align: center;
+    padding: 5% 0 5% 0;
+}
 
 /* Título do projeto */
 .principal__projetos__container-itens-titulo {
@@ -403,7 +408,6 @@ body {
     background-image: url("../img/fokus.png");
     background-size: cover;   
     opacity: 0.9;
- 
 }
 
 
@@ -421,11 +425,25 @@ body {
 .principal__projetos__container-itens-titulo-back {
     display: flex;
 }
-
+.principal__projetos__container-itens-back-resumo{
+    color: var(--cor2);
+    font-weight: 500;
+}
+#projeto-back-01{
+    color: var(--cor3);
+}
+#projeto-back-02{
+    
+}
+#projeto-back-03{
+    color: var(--cor3);
+}
+#projeto-back-04{
+    
+}
 /* Verso do card que fica invisível até ser clicado */
 .principal__projetos__container-itens-back {
     display: none;
-    background-color: var(--azul-escuro);
     border: 1px solid var(--cor3);
     padding: 5%;
     line-height: 2em;
