@@ -7,6 +7,7 @@
     --cor1: #7689f3;
     --cor2: #242641;
     --cor3: #f9f8ff;
+    --cor4: #00C6CA;
 }
 
 html, body {
@@ -234,6 +235,9 @@ body {
     padding-top: 5%;
 }
 
+.principal-nome {
+    color: var(--cor4)
+}
 
 /*Primeiro parágrafo apresentação*/
 #principal__portfolio-apresentacao-texto-01 {
@@ -243,7 +247,7 @@ body {
 
 /*Segundo parágrafo apresentação*/
 #principal__portfolio-apresentacao-texto-02 {
-    color: var(--cor4);
+    color: var(--cor3);
     font-size: 0.9rem;
 }
 
@@ -259,16 +263,16 @@ body {
 /*PRINCIPAL SOBRE*/
 /*Título das seções*/
 .portfolio__titulo {
-    font-size: 1.38rem;
+    font-size: 2rem;
     color: var(--cor1);
     text-align: center;
     padding-bottom: 2%;
-    text-shadow: 1px 1px 2px var(--cor4);
+    text-shadow: 1px 1px 2px var(--cor3);
 }
 
 .principal__sobre {
     padding: 15% 0 15% 0;
-    font-family: "Roboto Slab", serif;
+    font-family: "Dopio One", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -467,7 +471,7 @@ body {
 }
 
 .principal__projetos__container-links:hover {
-    color: var(--cor4);
+    color: var(--cor3);
 }
 
 /*RODAPÉ*/

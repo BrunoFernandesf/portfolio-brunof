@@ -27,7 +27,7 @@
     }
     /*Título das seções*/
     .portfolio__titulo {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     /*ELEMENTO HEADER*/
@@ -148,7 +148,7 @@
     .principal__projetos__container-itens {
         width: 100%;
     }
-
+    
     /*CONTATOS*/
     /*Container contatos*/
     .rodape__contatos {
