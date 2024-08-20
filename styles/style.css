@@ -356,10 +356,10 @@ body {
 .principal__projetos__titulo {
     padding-top: 5%;
 }
-
 .principal__projetos__container-itens {
-    margin: 5%;
-    cursor: pointer; /* Adiciona cursor apontando para indicar que é clicável */
+    margin: 1%;
+    border-radius: 2%;
+    cursor: pointer;
 }
 .principal__projetos__container-itens-skills{
     width: 85%;
@@ -382,15 +382,14 @@ body {
 /* Projeto 01 */
 /* Frente do primeiro projeto */
 #principal__projetos__projeto01 {
-    background-image: url("../img/pamonha-iris.jpeg");
+    background-image: url("../img/academia_sfit.jpg");
     background-size: cover;   
     opacity: 0.9;
- 
 }
 /* Projeto 02 */
 /* Frente do segundo projeto */
 #principal__projetos__projeto02 {
-    background-image: url("../img/aska-lamen.png");
+    background-image: url("../img/ponto_top.jpg");
     background-size: cover;   
     opacity: 0.9;
  
@@ -398,13 +397,27 @@ body {
 /* Projeto 03 */
 /* Frente do terceiro projeto */
 #principal__projetos__projeto03 {
-    background-image: url("../img/estadao.png");
+    background-image: url("../img/hervaz_advogados.jpg");
     background-size: cover;   
     opacity: 0.9;
- 
-}/* Projeto 04 */
-/* Frente do quarto projeto */
+}
+/* Projeto 04 */
+/* Frente do terceiro projeto */
 #principal__projetos__projeto04 {
+    background-image: url("../img/pamonha-iris.jpeg");
+    background-size: cover;   
+    opacity: 0.9;
+}
+/* Projeto 05 */
+/* Frente do terceiro projeto */
+#principal__projetos__projeto05 {
+    background-image: url("../img/aska-lamen.png");
+    background-size: cover;   
+    opacity: 0.9;
+}
+/* Projeto 06 */
+/* Frente do quarto projeto */
+#principal__projetos__projeto06 {
     background-image: url("../img/fokus.png");
     background-size: cover;   
     opacity: 0.9;
@@ -424,29 +437,45 @@ body {
 /*Título do card e tecnologias*/
 .principal__projetos__container-itens-titulo-back {
     display: flex;
+    justify-content: space-between;
 }
 .principal__projetos__container-itens-back-resumo{
-    color: var(--cor2);
+    color: var(--cor3);
     font-weight: 500;
 }
+.principal__projetos__container-itens-back-title{
+    font-size: 2em;
+}
+.principal__projetos__container-itens-back-img{
+    width: 35px;
+}
+
 #projeto-back-01{
-    color: var(--cor3);
+    
 }
 #projeto-back-02{
     
 }
 #projeto-back-03{
-    color: var(--cor3);
+    
 }
 #projeto-back-04{
+    
+}
+#projeto-back-05{
+    
+}
+#projeto-back-06{
     
 }
 /* Verso do card que fica invisível até ser clicado */
 .principal__projetos__container-itens-back {
     display: none;
+    background-color: var(--cor1);
     border: 1px solid var(--cor3);
-    padding: 5%;
+    padding: 2%;
     line-height: 2em;
+
 }
 
 /* Mostra o verso quando a classe virado está presente */

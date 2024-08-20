@@ -97,10 +97,12 @@ translations = {
         'apresentacao02': 'Front-End Software Developer',
         'sobretexto': 'Front-end Developer specialized in HTML, CSS, JavaScript, React, and Bootstrap. With extensive knowledge in responsive design and a constant commitment to technical improvement, I have experience in creating intuitive and visually appealing user interfaces. I am seeking opportunities to apply my creativity and skills in innovative projects in Front-end development, contributing to the creation of efficient and high-quality websites and web applications.',
         'veja': 'See more',
-        'textoProjeto01': 'The Pamonha da Iris project is a website that showcases the irresistible corn cakes made by Iris. Featuring an interactive carousel, quick access links, and responsive design, it provides an engaging and consistent visual experience across various devices. Integrated with WhatsApp for orders and displaying detailed menu information, the site was developed using HTML, CSS, JavaScript, with the design created in Figma.',
-        'textoProjeto02': 'This project consists of a website dedicated to a Japanese ramen restaurant, featuring an interactive carousel to visually showcase the available dishes. Users can adjust the desired quantities, and upon completing the order, the information is automatically sent to the restaurant WhatsApp. Developed with HTML, CSS, JavaScript, and Figma, the project aims to streamline the online ordering experience and integrate with the widely used WhatsApp platform. ',
-        'textoProjeto03': 'This project is a website for "ESTADÃO Bar & Lanche," a traditional establishment in downtown São Paulo since 1968. The site features dedicated sections for the menu, allowing the visualization of dishes through an interactive carousel. Additionally, there is a "Contact Us" area with a form for message submission and a "About Us" section, providing details about the history and prominence of the famous Pernil Sandwich from Estadão. Developed using HTML, CSS, JavaScript, and utilizing Figma for design, the website aims to provide an informative and interactive experience for users.',
-        'textoProjeto04': 'This is a project called "Fokus," presented on a simple website with three modes: "Focus," "Short Break," and "Long Break." The design is clean and modern, using the Montserrat and Prata fonts. The page features a banner section with the motto "Optimize your productivity, dive into what matters," accompanied by a representative image. In the card section, you can switch between focus and break modes, as well as toggle the music on or off. The timer is displayed centrally on the page, and a "Start" button allows you to initiate or pause the countdown.'
+        'textoProjeto01': 'Academia SFit.',
+        'textoProjeto02': 'Ponto Tops',
+        'textoProjeto03': 'Fokus',
+        'textoProjeto04': 'Pamonha da Iris',
+        'textoProjeto05': 'Aska Lamen',
+        'textoProjeto06': 'Estadão'
     }
 };
 
