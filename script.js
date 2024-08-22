@@ -97,12 +97,12 @@ translations = {
         'apresentacao02': 'Front-End Software Developer',
         'sobretexto': 'Front-end Developer specialized in HTML, CSS, JavaScript, React, and Bootstrap. With extensive knowledge in responsive design and a constant commitment to technical improvement, I have experience in creating intuitive and visually appealing user interfaces. I am seeking opportunities to apply my creativity and skills in innovative projects in Front-end development, contributing to the creation of efficient and high-quality websites and web applications.',
         'veja': 'See more',
-        'textoProjeto01': 'Academia SFit.',
-        'textoProjeto02': 'Ponto Tops',
-        'textoProjeto03': 'Fokus',
-        'textoProjeto04': 'Pamonha da Iris',
-        'textoProjeto05': 'Aska Lamen',
-        'textoProjeto06': 'Estadão'
+        'textoProjeto01': 'A modern website for a gym, created from a design in Figma and developed with HTML, CSS, JavaScript, and Bootstrap. The project offers an attractive and responsive interface, ensuring a smooth and engaging user experience.',
+        'textoProjeto02': 'Website for an electronics store, developed from a design in Figma and implemented with HTML, CSS, JavaScript, and Bootstrap. It offers a modern, responsive, and intuitive interface for an enhanced shopping experience.',
+        'textoProjeto03': 'Professional website for a law firm, created with WordPress. It offers an elegant and responsive interface, ensuring easy and accessible navigation, with a focus on presenting legal services.',
+        'textoProjeto04': 'Website for the local restaurant Pamonha da Iris, specializing in pamonhas, developed with Figma, HTML, CSS, and JavaScript. It features a friendly and responsive interface, highlighting the products and the cozy atmosphere.',
+        'textoProjeto05': 'Website for the traditional Japanese restaurant Aska Lamen, designed in Figma and developed with HTML, CSS, and JavaScript. It features an elegant and responsive interface that highlights the authenticity of Japanese cuisine.',
+        'textoProjeto06': 'Fokus é um temporizador estilo Pomodoro, desenvolvido para ajudar a manter o foco e a produtividade. Simples e intuitivo, oferece intervalos programados para otimizar o tempo de trabalho e descanso.'
     }
 };
 
