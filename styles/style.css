@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
+@font-face {
+    font-family: 'Helvetica Neue'; 
+    src: url('fonts/HelveticaNeueMedium.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --padrao: #13131F;
     --cor1: #7689f3;
@@ -272,7 +279,7 @@ body {
 
 .principal__sobre {
     padding: 15% 0 15% 0;
-    font-family: "Dopio One", serif;
+    font-family: "Helvetica Neue", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -290,6 +297,7 @@ body {
 #principal__sobre-conteudo-texto {
     padding: 0 10% 0 10%;
     line-height: 1.25em;
+    font-family: "Helvetica Neue", Arial;
 }
 
 /*PRINCIPAL HABILIDADES*/
